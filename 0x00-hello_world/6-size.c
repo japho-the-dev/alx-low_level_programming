@@ -4,6 +4,7 @@
  * Return 0 (Success)
  */
 int main(void)
+/* The main function of the program */
 {
 char a;
 int b;
