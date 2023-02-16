@@ -4,11 +4,14 @@
  * Return 0 (Success)
  */
 
-
-int main(void) /**
- *Main - allows initialization and printing of variables
+/**
+ * main - Entry point
+ *
+ * Description: 'allows initialization and printing of variables'
+ *
+ * Return: Always 0 (Success)
  */
-
+int main(void)
 {
 char a;
 int b;
