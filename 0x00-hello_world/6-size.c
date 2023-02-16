@@ -6,7 +6,7 @@
 
 
 int main(void) /**
- *Main function - Function allows initialization and printing of variables
+ *Main - allows initialization and printing of variables
  */
 
 {
