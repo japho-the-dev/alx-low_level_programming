@@ -3,8 +3,12 @@
  * A program that prints the size of on the computer it is compiled and run on
  * Return 0 (Success)
  */
-int main(void)
-/* The main function of the program */
+
+
+int main(void) /**
+ *Main function - Function allows initialization and printing of variables
+ */
+
 {
 char a;
 int b;
@@ -17,5 +21,8 @@ printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(b));
 printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(c));
 printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(d));
 printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+/**
+ *Return 0 (Success) - Function that returns the variable values
+ */
 return (0);
 }
