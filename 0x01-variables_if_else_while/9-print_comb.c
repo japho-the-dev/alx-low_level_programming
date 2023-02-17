@@ -18,4 +18,4 @@ int main(void)
 			putchar(' ');
 		}
 	}
-	return (0);i
+	return (0);
