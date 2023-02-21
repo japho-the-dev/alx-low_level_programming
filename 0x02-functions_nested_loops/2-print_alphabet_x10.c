@@ -6,7 +6,10 @@
  * Return: always void (Success)
  */
 /**
- * my_function - This is a description
+ * Print_alphabet_x10 - main function that print_alphabet 10 times
+ * Character - @arg1 : Accept character data types
+ * int - @arg2: accepts integers (10 timws)
+ * Return: Always 0 (Success)
  */
 void print_alphabet_x10(void)
 {
