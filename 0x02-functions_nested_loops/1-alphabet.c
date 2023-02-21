@@ -6,7 +6,7 @@
  *
  * Return: Always return 0 (Success)
  */
-void print_alphabet(void)
+void print_alphabet(void)/*print all alphabet in lowercase*/
 {
 	char letter;
 
