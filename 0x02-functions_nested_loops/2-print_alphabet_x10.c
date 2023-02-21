@@ -5,7 +5,9 @@
  * followed by a new line
  * Return: always void (Success)
  */
-
+/**
+ * my_function - This is a description
+ */
 void print_alphabet_x10(void)
 {
 	char ch;
