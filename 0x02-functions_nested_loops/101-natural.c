@@ -2,7 +2,7 @@
 
 /**
  * main - Prints the sum of all multiples of 3 qnd 5 up to 1024
- * Retur: always (Success)
+ * Return: always 0 (Success)
  */
 
 int main(void)
