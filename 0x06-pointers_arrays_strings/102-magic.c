@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+ * main - prints integers
+ * @a: value 1
+ * @p: value 2
+ * Return; Always 0
+ */
 int main(void)
 {
 	int n;
