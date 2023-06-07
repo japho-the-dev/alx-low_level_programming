@@ -7,24 +7,23 @@
  * square root
  */
 
-int _sqrt_recursion(int n) {
-    if (n < 0) {
-        return -1;  /* Negative numbers do not have a natural square root */
-    }
-    if (n == 0 || n == 1) {
-        return n;  /* Base case: square root of 0 or 1 is the number itself */
-    }
-    return _sqrt_recursive_helper(n, 1, n);
+int _sqrt_recursion(int n)
+{
+	int sqrt_fun(int n, int sq);
+
+	int sq = 1;
+
+	return (sqrt_fun(n, sq));
 }
 
 /**
- * sqrt_recursive_helper - helper function to solve _sqrt_recursion
+ * sqrt_fun - helper function to solve _sqrt_recursion
  * @sq: number to determine if square root
  * @n:  int number
  * Return: square root if natural square root, or -1 if none found
  */
 
-int sqrt_recursive_helper(int n, int sq)
+int sqrt_fun(int n, int sq)
 {
 	if (n == sq * sq)
 	{
@@ -32,7 +31,7 @@ int sqrt_recursive_helper(int n, int sq)
 	}
 	else if (sq < n)
 	{
-		return (sqrt_recursive_helper(n, ++sq));
+		return (sqrt_fun(n, ++sq));
 	}
 	else
 	{
