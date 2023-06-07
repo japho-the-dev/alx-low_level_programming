@@ -14,7 +14,10 @@ int wildcmp(char *s1, char *s2)
 	{
 		return (1);
 	}
-
+	if (*s2 == '*' && *(s2 + 1) != '\0' && *s1 == '\0')
+	{
+		return (0);
+	}
     /* If the current characters match or the second string contains '*' */
 	if (*s1 == *s2)
 	{
