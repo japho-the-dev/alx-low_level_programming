@@ -16,7 +16,7 @@ int wildcmp(char *s1, char *s2)
 	}
 
     /* If the current characters match or the second string contains '*' */
-	if (*s1 == *s2 || *s2 == '*')
+	if (*s1 == *s2)
 	{
 		/* Recursively check the remaining characters */
 		return (wildcmp(s1 + 1, s2 + 1));
