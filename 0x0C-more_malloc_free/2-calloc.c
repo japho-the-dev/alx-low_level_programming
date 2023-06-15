@@ -30,7 +30,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	for (total_size = 0; total_size < (nmemb * size); total_size++)
 	{
-		((char *)(ptr) + total_size) = 0;
+		*((char *)(ptr) + total_size) = 0;
 	}
 	return (ptr);
 }
