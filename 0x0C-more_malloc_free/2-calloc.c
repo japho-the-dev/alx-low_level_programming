@@ -12,26 +12,25 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-    void *ptr; /* Pointer to the allocated memory */
-    unsigned int total_size;
+	void *ptr; /* Pointer to the allocated memory */
+	unsigned int total_size;
 
-    /* Check for zero nmemb or size */
-    if (nmemb == 0 || size == 0)
-        return NULL;
+	/* Check for zero nmemb or size */
+	if (nmemb == 0 || size == 0)
+		return (NULL);
 
-    /* Calculate the total size of the allocation */
-    total_size = nmemb * size;
+	/* Calculate the total size of the allocation */
+	total_size = nmemb * size;
 
-    /* Allocate memory using malloc */
-    ptr = malloc(total_size);
+	/* Allocate memory using malloc */
+	ptr = malloc(total_size);
 
-    if (ptr == NULL)
-        return NULL;
+	if (ptr == NULL)
+		return (NULL);
 
-    for (total_size = 0; total_size < (nmemb * size); total_size++)
+	for (total_size = 0; total_size < (nmemb * size); total_size++)
 	{
-		*((char *)(ptr) + total_size) = 0;
+		((char *)(ptr) + total_size) = 0;
 	}
-
-    return ptr;
+	return (ptr);
 }
